@@ -1,0 +1,11 @@
+{% extends 'base.jinja' %}
+{% block content %}
+
+ {{ book.title }} {{ book.author }} {{ book.genre }} 
+
+ <form action="/books/delete/{{book.title}}" method = "POST">
+ <button>Delete this book</button>
+ </form>
+
+    
+{% endblock content %}
